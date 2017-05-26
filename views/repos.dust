@@ -1,0 +1,56 @@
+{>"layout/master"/}
+{<body}
+<div class="container">
+    <div class="col-md-12">{#items}
+        <div class="repos-container">
+            <div class="col-md-8">
+                <h3 style="font-size: 20px;font-weight: 600"><a href="{.html_url}" target="_blank"> {.owner.login}/<i>{.name}</i></a></h3>
+                <p>{.description}</p>
+                <p></p>
+                <p class="pp">Created on {.created_at}</p>
+                <p class="pp">Updated on {.updated_at}</p>
+                <p class="pp"><a href="/repos/{.owner.login}/{.name}/contributors">View Contributors</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-language"></i> {.language}</h4>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-code-fork"></i> {.forks_count}</h4>
+            </div>
+        </div>
+{/items}
+        <!--<div class="repos-container">
+            <div class="col-md-8">
+                <h3 style="font-size: 20px;font-weight: 600"><a href="#"> owner/<i>name</i></a></h3>
+                <p>fhghjnkk  jngnhjnj gnkhkjkj</p>
+                <p></p>
+                <p class="pp">Created on Date Created</p>
+                <p class="pp">Updated on Date Updated</p>
+                <p class="pp"><a>View Contributors</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-language"></i> Language</h4>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-code-fork"></i> FOrks</h4>
+            </div>
+        </div>
+        <div class="repos-container">
+            <div class="col-md-8">
+                <h3 style="font-size: 20px;font-weight: 600"><a href="#"> owner/<i>name</i></a></h3>
+                <p>fhghjnkk  jngnhjnj gnkhkjkj</p>
+                <p></p>
+                <p class="pp">Created on Date Created</p>
+                <p class="pp">Updated on Date Updated</p>
+                <p class="pp"><a>View Contributors</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-language"></i> Language</h4>
+            </div>
+            <div class="col-md-2">
+                <h4 style="font-size: 17px;font-weight: 400"><i class="fa fa-code-fork"></i> FOrks</h4>
+            </div>
+        </div>-->
+</div> </div>
+
+{/body}

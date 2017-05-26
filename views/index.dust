@@ -1,0 +1,162 @@
+{>"layout/master"/}
+{<body}
+<div id="tab">
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+            <a href="#repos" data-toggle="tab">Search by Repos</a>
+        </li>
+        <li>
+            <a href="#issues" data-toggle="tab">Search by issues</a>
+        </li>
+        <li>
+            <a href="#users" data-toggle="tab">Search by users</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="repos">
+            <form action="/repos" method="post">
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="name">Repo name/user name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <input type="text" name="language" id="language">
+                    </div>
+            <div class="form-group">
+                <label for="datecreated">Date created(yyyy-mm-dd)</label>
+                <input type="radio" name="csign" value=">="> gte
+                <input type="radio" name="csign" value="<="> lte
+                <input type="radio" name="csign" value=">"> gt
+                <input type="radio" name="csign" value="<"> lt
+                <input type="radio" name="csign" value="=" checked> equals
+                <input type="date" id="datecreated" name="datecreated">
+            </div>
+                <div class="form-group">
+                    <label for="datepushed">Date pushed(yyyy-mm-dd)</label>
+                    <input type="radio" name="psign" value=">="> gte
+                    <input type="radio" name="psign" value="<="> lte
+                    <input type="radio" name="psign" value=">"> gt
+                    <input type="radio" name="psign" value="<"> lt
+                    <input type="radio" name="psign" value="=" checked> equals
+                    <input type="date" id="datepushed" name="datepushed">
+                </div>
+                <div class="form-group">
+                    <label for="forks">no of forks</label>
+                    <input type="radio" name="sign" value=">="> gte
+                    <input type="radio" name="sign" value="<="> lte
+                    <input type="radio" name="sign" value=">"> gt
+                    <input type="radio" name="sign" value="<"> lt
+                    <input type="radio" name="sign" value="=" checked> equals
+                    <input type="text" id="forks" name="forks">
+                </div>
+                <div class="form-group">
+                    <label for="topic">Topic</label>
+                    <input type="text" name="topic" id="topic">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="search">
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane" id="issues">
+            <form  method="post" action="/issues">
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="issue">Issue</label>
+                        <input type="text" name="issue" id="issue">
+                    </div>
+                    <div class="form-group">
+                        <label for="user">USer or Repo</label>
+                        <input type="text" name="user" id="user">
+                    </div>
+                <div class="form-group">
+                    <label for="">type of issues</label>
+                   <input type="radio" name="issues" value="issues">issues
+                    <input type="radio" name="issues" value="pr">pull request
+                </div>
+                <div class="form-group">
+                    <label for="involves">Involves</label>
+                    <input type="text" id="involves" name="involves">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="radio" name="state" value="open">open
+                    <input type="radio" name="state" value="closed">closed
+                </div>
+                <div class="form-group">
+                    <label for="language">Language</label>
+                    <input type="text" name="language" id="language">
+                </div>
+                <div class="form-group">
+                    <label for="datecreated">Date created(yyyy-mm-dd)</label>
+                    <input type="radio" name="csign" value=">="> gte
+                    <input type="radio" name="csign" value="<="> lte
+                    <input type="radio" name="csign" value=">"> gt
+                    <input type="radio" name="csign" value="<"> lt
+                    <input type="radio" name="csign" value="=" checked> equals
+                    <input type="date" id="datecreated" name="datecreated">
+                </div>
+                    <div class="form-group">
+                        <label for="label">label</label>
+                        <input type="text" name="label" id="label">
+                    </div>
+                <div class="form-group">
+                    <label for="project">project</label>
+                    <input type="text" name="project" id="project">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="search">
+                </div></div>
+            </form>
+        </div>
+        <div class="tab-pane" id="users">
+            <form method="post" action="/users">
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="location">name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                <div class="form-group">
+                    <label for="">type of user</label>
+                    <input type="radio" name="user" value="org">Organization
+                    <input type="radio" name="user" value="user">User
+                </div>
+                <div class="form-group">
+                    <label for="repos">Number of repos</label>
+                    <input type="radio" name="sign" value=">="> gte
+                    <input type="radio" name="sign" value="<="> lte
+                    <input type="radio" name="sign" value=">"> gt
+                    <input type="radio" name="sign" value="<"> lt
+                    <input type="radio" name="sign" value="="> equals
+                    <input type="text" id="repos" name="repos">
+                </div>
+                <div class="form-group">
+                    <label for="location">location</label>
+                    <input type="text" id="location" name="location">
+                </div>
+                <div class="form-group">
+                    <label for="language">Language</label>
+                    <input type="text" name="language" id="language">
+                </div>
+                <div class="form-group">
+                    <label for="followers">No of followers</label>
+                    <input type="radio" name="fsign" value=">="> gte
+                    <input type="radio" name="fsign" value="<="> lte
+                    <input type="radio" name="fsign" value=">"> gt
+                    <input type="radio" name="fsign" value="<"> lt
+                    <input type="radio" name="fsign" value="="> equals
+                    <input type="text" name="followers" id="followers">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="search">
+                </div></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{/body}

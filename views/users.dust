@@ -1,0 +1,36 @@
+{>"layout/master"/}
+{<body}
+{#items}
+<div class="container">
+    <div class="users-container">
+    <img style="width: 100%;height: 100%" src="{.avatar_url}" alt="/">
+        <div class="users-container-content"><span>
+            <h4>{.login}</h4>
+           <div> <h6><a href="/users/{.login}/repos">view {.login}'s repos</a> </h6></div>
+            </span>   </div>
+    </div>
+    {/items}
+<!--    <div class="users-container">
+        <img style="width: 100%;height: 100%" src="/img/test.png" alt="/">
+        <div class="users-container-content">
+            <h4>LOgin</h4>
+            <div> <h6>Other Repos</h6></div>
+        </div>
+    </div>
+    <div class="users-container">
+        <img style="width: 100%;height: 100%" src="/img/test.png" alt="/">
+        <div class="users-container-content">
+            <h4>LOgin</h4>
+            <div> <h6>Other Repos</h6></div>
+        </div>
+    </div>
+    <div class="users-container">
+        <img style="width: 100%;height: 100%" src="/img/test.png" alt="/">
+        <div class="users-container-content">
+            <h4>LOgin</h4>
+            <div> <h6>Other Repos</h6></div>
+        </div>
+    </div>-->
+
+</div>
+{/body}

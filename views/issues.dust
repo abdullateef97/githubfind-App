@@ -1,0 +1,45 @@
+{>"layout/master"/}
+{<body}
+<div class="container">
+    {#items}
+    <div class="repos-container">
+        <div class="col-md-10">
+            <h3 style="font-size: 20px;font-weight: 600"><i class="fa fa-exclamation-circle" style="color: green"></i><a href="{.html_url}" target="_blank">
+                                                            {.title}</a></h3>
+            <p></p>
+            <p class="pp">Created by {.user.login} on {.created_at}</p>
+            <p class="pp">Updated on {.updated_at}                           {.comments} comments</p>
+        </div>
+        <div class="col-md-2">
+            #{.number}
+        </div>
+
+    </div>{/items}
+    <!--<div class="repos-container">
+        <div class="col-md-10">
+            <h3 style="font-size: 20px;font-weight: 600"><i class="fa fa-exclamation-circle" style="color: green"></i><a href="#"> title</a></h3>
+            <p></p>
+            <p class="pp">Created by owner on date created</p>
+            <p class="pp">Updated on Date Updated           4 comments</p>
+        </div>
+        <div class="col-md-2">
+            #number
+        </div>
+
+    </div>
+    <div class="repos-container">
+        <div class="col-md-10">
+            <h3 style="font-size: 20px;font-weight: 600"><i class="fa fa-exclamation-circle" style="color: green"></i><a href="#"> title</a></h3>
+            <p></p>
+            <p class="pp">Created by owner on date created</p>
+            <p class="pp">Updated on Date Updated           4 comments</p>
+        </div>
+        <div class="col-md-2">
+            #number
+        </div>
+
+    </div>
+-->
+</div>
+
+{/body}
